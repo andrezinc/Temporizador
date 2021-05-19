@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+}
+.timer{
+    margin-top: 30px;
+    min-height: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    margin-right: 5px;
+}
+label{
+    font-size: 20px;
+}
+.horas, .minutos{
+    display: flex;
+    max-width: 5%;
+    margin: 10px;
+}
+
+.lista-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista{
+    min-width: 25%;
+    list-style: none;
+
+}
+.conteudo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0.5rem;
+    background: white;
+    color:black;
+    font-size: 1rem;
+    display: grid;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.lixo{
+    background: rgba(255, 38, 38, 0.664);
+    color:white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+} 
+.conclusao{
+    
+    background: rgba(0, 255, 0, 0.767);
+    color: white;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+
+}
+.div2{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0.5rem;
+    background: white;
+    color:black;
+    font-size: 1rem;
+    min-width: 10px;
+    justify-content: space-between; 
+    align-items: center;
+
+}
+.add{
+    
+    background: rgba(221, 222, 224, 0.767);
+    color: rgb(14, 14, 14);
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+    display: -moz-inline-stack;
+}
+.bola,.bol2{
+    padding: 0 0.5rem;
+    display: inline-block;
+
+
+}
+.fa-trash-alt, .fa-check,.fa-plus{
+pointer-events: none;
+}
+.concluido{
+    background: rgba(27, 230, 27, 0.404);
+    text-decoration: line-through;
+    display: flex;
+}
+body{
+    background-image: linear-gradient( 80deg ,rgb(130, 228, 231),rgb(219, 94, 209));
+    color:rgb(0, 0, 0);
+    font-family:'Lato', sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 20px;
+}
+header, form{
+    min-height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocao{
+    display: center;
+    min-height: 30%;
+    margin-right: 5px;
+
+
+}
