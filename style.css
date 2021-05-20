@@ -1,0 +1,3 @@
+.glyphicon-ok, .glyphicon-plus, .glyphicon-trash{
+    pointer-events: none;
+}

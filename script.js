@@ -1,7 +1,7 @@
 var blocao = document.querySelector(".blocao");
-var botao = document.querySelector(".botao");
-var lista = document.querySelector(".lista");
-var minutos = document.querySelector(".minutos");
+var botao = document.querySelector("#botao");
+var lista = document.querySelector("#lista");
+var minutos = document.querySelector("#minutos");
 
 botao.addEventListener("click", f1);
 lista.addEventListener("click", deletar);
@@ -16,29 +16,13 @@ function f1(event) {
         var sec;
         var min2;
 
+
+        var linha = document.createElement("div");
+        linha.classList.add("thumbnail");
+
         var div1 = document.createElement('div');
-        div1.classList.add('conteudo');
-
-        var bol = document.createElement('li');
-        bol.innerText = `${blocao.value}`;
-        bol.classList.add('bola');
-        div1.appendChild(bol);
-
-        var lixo = document.createElement('button');
-        lixo.classList.add('lixo');
-        lixo.innerHTML = '<i class="fas fa-trash-alt"></i>';
-        div1.appendChild(lixo);
-
-
-        var concluido = document.createElement('button');
-        concluido.classList.add('conclusao');
-        concluido.innerHTML = '<i class="fas fa-check" </i>';
-        div1.appendChild(concluido);
-
-        var add1 = document.createElement('button');
-        add1.classList.add('add');
-        add1.innerHTML = '<i class="fas fa-plus" </i>';
-        div1.appendChild(add1);
+        div1.classList.add('col-sm-6');
+        div1.classList.add('col-md-4');
 
         var tempo1 = document.createElement('p');
         tempo1.classList.add("tempospos");
@@ -58,50 +42,77 @@ function f1(event) {
         else tempo1.innerText = "00:00"
 
 
-        div1.appendChild(tempo1);
+        linha.appendChild(tempo1);
 
+        var bol = document.createElement('p');
+        bol.innerText = `${blocao.value}`;
+        bol.classList.add('bola');
+        linha.appendChild(bol);
+
+        var lixo = document.createElement('button');
+        lixo.classList.add('btn');
+        lixo.classList.add('btn-primary');
+        lixo.id = "lixo"
+        lixo.innerHTML = '<i class="glyphicon glyphicon-trash"></i>';
+        linha.appendChild(lixo);
+
+
+        var concluido = document.createElement('button');
+        concluido.classList.add('btn');
+        concluido.classList.add('btn-success');
+        concluido.id="concluido";
+        concluido.innerHTML = '<i class="glyphicon glyphicon-ok" </i>';
+        linha.appendChild(concluido);
+
+        var add1 = document.createElement('button');
+        add1.classList.add('btn');
+        add1.classList.add('btn-primary');
+        add1.id="add";
+        add1.innerHTML = '<i class=" glyphicon glyphicon-plus" </i>';
+        linha.appendChild(add1);
+
+        
 
         blocao.value = "";
         minutos.value = "0";
 
+        div1.appendChild(linha);
         lista.appendChild(div1);
+        
     }
-    else return 0;
+    
 
 }
 
 function deletar(event) {
     var item = event.target;
+    
 
-
-    if (item.classList[0] === 'lixo') {
+    if (item.id === 'lixo') {
         var conteudo = item.parentElement;
         conteudo.remove();
     }
-    else if (item.classList[0] === 'conclusao') {
+    else if (item.id === 'conclusao') {
         var cara = item.parentElement;
-        if (cara.classList[0] === 'conteudo' && cara.classList[1] === 'concluido') {
+        if (cara.id[0] === 'conteudo' && cara.id[1] === 'concluido') {
             cara.classList.remove("concluido");
 
         }
         else cara.classList.add("concluido");
 
     }
-    else if(item.classList[0] === 'add'){
+    else if(item.id === 'add'){
         if (blocao.value != ''){
         var div3= item.parentElement;
         var div2= document.createElement('div');
-        div2.classList.add('div2');
+        div2.classList.add('caption');
 
-        var bol2= document.createElement('li');
-        bol2.classList.add('bol2');
+        var bol2= document.createElement('p');
         bol2.innerText= (`${blocao.value}`)
         div2.appendChild(bol2);
 
-        
-
-
-        div3.appendChild(div2);
+        div3.appendChild(div2); 
+        blocao.value="";
         }
 
     }
