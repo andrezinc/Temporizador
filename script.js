@@ -92,6 +92,7 @@ function deletar(event) {
         var conteudo = item.parentElement;
         conteudo.remove();
     }
+	
     else if (item.id === 'conclusao') {
         var cara = item.parentElement;
         if (cara.id[0] === 'conteudo' && cara.id[1] === 'concluido') {
