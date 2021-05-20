@@ -89,8 +89,8 @@ function deletar(event) {
     
 
     if (item.id === 'lixo') {
-        var conteudo = item.parentElement;
-        var remover=conteudo.parentElement;
+        var conteudo = item.parentElement; //vai pro pai do lixo que é a div thumbnail
+        var remover=conteudo.parentElement; // vai pro pai da div thumnail que é o col-sm
         remover.remove();
     }
     else if (item.id === 'conclusao') {
