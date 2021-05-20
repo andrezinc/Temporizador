@@ -16,13 +16,13 @@ function f1(event) {
         var sec;
         var min2;
 
-
-        var linha = document.createElement("div");
-        linha.classList.add("thumbnail");
-
         var div1 = document.createElement('div');
         div1.classList.add('col-sm-6');
         div1.classList.add('col-md-4');
+
+        var linha = document.createElement("div");
+        linha.classList.add("thumbnail");
+      
 
         var tempo1 = document.createElement('p');
         tempo1.classList.add("tempospos");
@@ -90,7 +90,8 @@ function deletar(event) {
 
     if (item.id === 'lixo') {
         var conteudo = item.parentElement;
-        conteudo.remove();
+        var remover=conteudo.parentElement;
+        remover.remove();
     }
 	
     else if (item.id === 'conclusao') {
