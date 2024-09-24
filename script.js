@@ -17,8 +17,7 @@ function f1(event) {
         var min2;
 
         var div1 = document.createElement('div');
-        div1.classList.add('col-sm-6');
-        div1.classList.add('col-md-4');
+        div1.classList.add('conteudo');
 
         var linha = document.createElement("div");
         linha.classList.add("thumbnail");
