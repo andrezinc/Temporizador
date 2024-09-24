@@ -1,12 +1,15 @@
-# L A R D - README
+# L A R D 
+
+Disponivel em: https://andrezinc.github.io/Temporizador/
+**Atenção:** O projeto ainda não está totalmente concluído e pode necessitar de alguns ajustes.
 
 ### O projeto do design do site foi elaborado no figma
 ![Figma Design](Site.pdf)  
+---
 
 ## Descrição
 
 O **L A R D** é uma aplicação web que serve como gerenciador de tarefas. Os usuários podem adicionar atividades, definir um tempo para cada uma e acompanhar seu progresso de forma intuitiva. O design é simples e focado na usabilidade.
-**Atenção:** O projeto ainda não está totalmente concluído e pode necessitar de alguns ajustes.
 
 ## Estrutura do Projeto
 
