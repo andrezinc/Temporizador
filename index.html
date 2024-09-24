@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-
-<head>
+<html lang="pt-Br"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <title>Landr</title>
-    
+    <link href="https://fonts.googleapis.com/css?family=Jersey 10" rel="stylesheet">
+    <title>L A R D </title>
+
 </head>
 
 <body>
     <header>
-        <h1 class="text-center">-Landr-</h1>
+        <h1 class="text-center">L A R D </h1>
     </header>
 
     <form>
@@ -23,26 +20,27 @@
             <div class="form-group">
 						<h3 class="text-center">
 							Tempo
-						</h2>
-					<label for="formControlRange"></label>
-                <input id="minutos"type="range" class="form-control-range" id="formControlRange" min="0" max="59">
+						</h3>
+
+
               </div>
 		</div>
-	
-        <input type="text" class="blocao" placeholder="Digite o nome da Atividade!">
-        <button id="botao"  class="btn btn-success" type="submit">
-            <i class="glyphicon glyphicon-plus">
-            </i>
+        <div class="timer2">
+        <input id="minutos" type="range" class="form-control-range" min="0" max="59"><input type="text" class="blocao">
+        <button id="botao" class="btn-success" type="submit" style="border: 0; background: transparent">
+         <img src="acess.png" alt="submit" />
         </button>
+        </div>
 	</div>
     </form>
 
     <div class="row" id="lista">
-       
+
     </div>
 
 
     <script src="./script.js"></script>
-</body>
 
-</html>
+
+
+</body></html>
