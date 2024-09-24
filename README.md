@@ -1,6 +1,7 @@
 # L A R D 
 
 Disponivel em: https://andrezinc.github.io/Temporizador/
+
 **Atenção:** O projeto ainda não está totalmente concluído e pode necessitar de alguns ajustes.
 
 ### O projeto do design do site foi elaborado no figma
