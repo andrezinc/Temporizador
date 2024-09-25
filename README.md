@@ -7,7 +7,7 @@ Disponivel em: https://andrezinc.github.io/Temporizador/
 ## O projeto do design do site foi elaborado no figma
 ![Imagem](Screenshot2024-09-25.png)
 
-Detalhamento da mudança:[Figma Design](Site.pdf)  
+Detalhamento das mudanças: [Design feito no Figma](Site.pdf)  
 
 ## Descrição
 
